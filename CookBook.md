@@ -61,7 +61,14 @@ tBodyAcc, tGravityAcc, tBodyAccJerk, tBodyGyro, tBodyGyroJerk, tBodyAccMag, tBod
 
 The above variables where choosen as they included either mean or std in their original names.
 
+## Transformations
+The script run_analysis.R transforms the initial dataset to the final tidy data according to the following :
 
+Load the various files of the UCI dataset
+Merges the test and three train files into a single data table, with respective descriptive columns name
+Creates a smaller second dataset, containing only mean and std variables
+Computes the means of this secondary dataset, group by subject/activity.
+outputs the tidy dataset to txt file named tidy_data.txt
 
 ## License:
 
